@@ -3,20 +3,16 @@ var MarkdownPages = require('./index').MarkdownPages,
 
 module.exports = function(broccoli) {
 
-  var _this = this;
+  var example = broccoli.makeTree('example'),
+      options = {
+        templates: './example/templates',
+        globals: {
+          message: "Hello World!"
+        }
+      };
 
-  var example = broccoli.makeTree('example');
-
-  example = MarkdownPages(example, {
-    templates: './example/templates',
-    globals: {
-      message: "Hello World!"
-    }
-  });
-
-  example = HTMLPages(example, {
-
-  });
+  example = HTMLPages(example, options);
+  example = MarkdownPages(example, options);
 
   return example;
 
