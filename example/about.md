@@ -6,3 +6,5 @@ template: default.hbs
 
 - [Services](/about/services)
 - [Team](/about/team)
+
+{{message}}{{!from globals}}
