@@ -1,0 +1,20 @@
+{
+  "name": "broccoli-pages",
+  "version": "0.0.0",
+  "description": "Build HTML pages from Markdown and HTML fragments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "tags": ["broccoli-plugin", "markdown", "handlebars"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "~0.3.1",
+    "broccoli": "~0.2.0",
+    "broccoli-filter": "^0.1.0",
+    "js-yaml": "^3.0.1",
+    "rsvp": "^3.0.6",
+    "handlebars": "^1.3.0"
+  }
+}
