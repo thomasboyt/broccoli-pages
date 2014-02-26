@@ -1,4 +1,5 @@
-var MarkdownPages = require('./index').MarkdownPages;
+var MarkdownPages = require('./index').MarkdownPages,
+    HTMLPages = require('./index').HTMLPages;
 
 module.exports = function(broccoli) {
 
@@ -11,6 +12,10 @@ module.exports = function(broccoli) {
     globals: {
       message: "Hello World!"
     }
+  });
+
+  example = HTMLPages(example, {
+
   });
 
   return example;
