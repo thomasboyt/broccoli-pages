@@ -6,6 +6,7 @@ module.exports = function(broccoli) {
   var example = broccoli.makeTree('example/content'),
       options = {
         templates: './example/templates',
+        helpers: './example/helpers',
         globals: {
           message: "Hello World!"
         }
