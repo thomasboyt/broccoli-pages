@@ -3,7 +3,7 @@ var MarkdownPages = require('./index').MarkdownPages,
 
 module.exports = function(broccoli) {
 
-  var example = broccoli.makeTree('example'),
+  var example = broccoli.makeTree('example/content'),
       options = {
         templates: './example/templates',
         globals: {
