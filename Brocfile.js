@@ -1,5 +1,5 @@
-var MarkdownPages = require('./index').MarkdownPages,
-    HTMLPages = require('./index').HTMLPages;
+var MarkdownPages = require('./lib/index').MarkdownPages,
+    HTMLPages = require('./lib/index').HTMLPages;
 
 module.exports = function(broccoli) {
 
@@ -7,6 +7,7 @@ module.exports = function(broccoli) {
       options = {
         templates: './example/templates',
         helpers: './example/helpers',
+        partials: './example/templates/partials',
         globals: {
           message: "Hello World!"
         }
