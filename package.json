@@ -1,6 +1,6 @@
 {
   "name": "broccoli-pages",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Build HTML pages from Markdown and HTML fragments",
   "main": "./lib/index.js",
   "scripts": {
