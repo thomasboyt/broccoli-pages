@@ -16,8 +16,8 @@ template: default.hbs
 ## Usage
 
 ```javascript
-var MarkdownPages = require('./lib/index').MarkdownPages;
-var HTMLPages = require('./lib/index').HTMLPages;
+var MarkdownPages = require('broccoli-pages').MarkdownPages;
+var HTMLPages = require('broccoli-pages').HTMLPages;
 var pickFiles = require('broccoli-static-compiler');
 
 var options = {
