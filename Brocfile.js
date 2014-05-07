@@ -1,5 +1,6 @@
 var MarkdownPages = require('./lib/index').MarkdownPages;
 var HTMLPages = require('./lib/index').HTMLPages;
+var HBSPages = require('./lib/index').HBSPages;
 var pickFiles = require('broccoli-static-compiler');
 
 var options = {
@@ -7,7 +8,8 @@ var options = {
   helpers: './example/helpers',
   partials: './example/templates/partials',
   globals: {
-    message: "Hello World!"
+    message: "Hello World!",
+    team: [ 'Bob', 'Joe', 'Mary' ]
   }
 };
 
@@ -21,5 +23,6 @@ var content = pickFiles(example, {
 
 var html = HTMLPages(content, options);
 var rendered = MarkdownPages(html, options);
+var handlebars = HBSPages(rendered, options);
 
-module.exports = rendered;
+module.exports = handlebars;
