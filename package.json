@@ -4,7 +4,7 @@
   "description": "Build HTML pages from Markdown and HTML fragments",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/tap/bin/tap.js ./tests"
   },
   "tags": [
     "broccoli-plugin",
@@ -23,6 +23,6 @@
     "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "broccoli-static-compiler": "^0.1.4"
+    "tap": "^0.4.9"
   }
 }
